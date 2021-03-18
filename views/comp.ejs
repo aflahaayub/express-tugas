@@ -1,20 +1,18 @@
 <%- include('partials/head') %>
-  <div class="container background">
-    <h1>Computer Data</h1>
-    <div class="row">
-      <div class="col-lg-5">
-        <p>CPU Model: <%= model %>
-        </p>
-        <p>CPU Speed: <%= speed %>
-        </p>
-      </div>
-      <div class="col-lg">
-        Free Memory: <%= fmemory %>
-      </div>
-      <div class="col-lg">
-        User Data: <%= user %>
-      </div>
+  <div class="row">
+    <div class="content col-lg-6">
+      <h1>Computer Data</h1>
+      <p>CPU Model: <%= model %>
+      </p>
+      <p>CPU Speed: <%= speed %>
+      </p>
+      <p>Free Memory: <%= fmemory %>
+      </p>
+      <p>User Data: <%= user %>
+      </p>
+    </div>
+    <div class="col-lg-6 p-0">
+      <div class="bg-img"></div>
     </div>
   </div>
-
   <%- include('partials/footer.ejs') %>
